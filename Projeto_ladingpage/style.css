@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:#767676 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+}
+
+.hero{
+    background-color: gray;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: #858585;
+    text-align
+}
