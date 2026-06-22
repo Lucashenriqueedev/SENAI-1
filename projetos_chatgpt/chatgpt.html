@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMORE — 12 de Junho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CURSOR CUSTOM -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- CANVAS HEARTS -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">AMORE</div>
+    <ul class="nav__links">
+      <li><a href="#manifesto">Nossa História</a></li>
+      <li><a href="#momentos">Momentos</a></li>
+      <li><a href="#presentes">Presentes</a></li>
+      <li><a href="#carta">Carta</a></li>
+    </ul>
+    <a href="#presentes" class="nav__cta">Surpreender →</a>
+  </nav>
+
+  <!-- HERO FULLSCREEN -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="eyebrow-line"></span>
+        12 de Junho
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title-line hero__title-line--1">Cada</span>
+        <span class="hero__title-line hero__title-line--2"><em>momento</em></span>
+        <span class="hero__title-line hero__title-line--3">contigo</span>
+      </h1>
+      <p class="hero__sub">é onde eu escolho ficar.</p>
+      <div class="hero__cta-wrap">
+        <a href="#manifesto" class="btn-primary">Viver isso →</a>
+        <div class="hero__date-badge">
+          <div class="date-countdown" id="countdown">
+            <div class="cd-unit"><span id="cdDays">00</span><label>dias</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span id="cdHours">00</span><label>horas</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span id="cdMins">00</span><label>min</label></div>
+          </div>
+          <div class="date-label">até o Dia dos Namorados</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-cue">
+      <div class="scroll-text">Deslize para sentir</div>
+      <div class="scroll-line-anim"></div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="manifesto">
+    <div class="manifesto__inner">
+      <div class="manifesto__label">// O que é amor</div>
+      <blockquote class="manifesto__quote">
+        <p>Amor não é um sentimento que você encontra.<br/>É uma escolha que você faz,<br/>todos os dias,<br/><em>de novo.</em></p>
+      </blockquote>
+      <div class="manifesto__stats">
+        <div class="mstat">
+          <span class="mstat__num" data-target="365">0</span>
+          <span class="mstat__label">dias por ano que vale a pena amar</span>
+        </div>
+        <div class="mstat__div"></div>
+        <div class="mstat">
+          <span class="mstat__num" data-target="1">0</span>
+          <span class="mstat__label">pessoa que muda tudo</span>
+        </div>
+        <div class="mstat__div"></div>
+        <div class="mstat">
+          <span class="mstat__num" data-target="∞" data-special="true">0</span>
+          <span class="mstat__label">razões para ficar</span>
+        </div>
+      </div>
+    </div>
+    <div class="manifesto__visual">
+      <div class="polaroid-stack">
+        <div class="polaroid pol-3">
+          <img src="https://picsum.photos/seed/couple3/280/320" alt="Momento 3"/>
+          <div class="polaroid__caption">nosso primeiro jantar</div>
+        </div>
+        <div class="polaroid pol-2">
+          <img src="https://picsum.photos/seed/couple2/280/320" alt="Momento 2"/>
+          <div class="polaroid__caption">aquela viagem</div>
+        </div>
+        <div class="polaroid pol-1">
+          <img src="https://picsum.photos/seed/couple1/280/320" alt="Momento 1"/>
+          <div class="polaroid__caption">o dia que tudo mudou ♡</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOMENTOS — TIMELINE CINEMATOGRÁFICA -->
+  <section class="momentos" id="momentos">
+    <div class="momentos__header">
+      <div class="section-label">// Nossa linha do tempo</div>
+      <h2 class="section-title">Os momentos<br/><em>que ficam</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline__line"></div>
+      <div class="timeline-item tl-left reveal">
+        <div class="tl-img-wrap">
+          <img src="https://picsum.photos/seed/love1/500/380" alt="Primeiro encontro"/>
+          <div class="tl-img-overlay"></div>
+          <div class="tl-img-label">01</div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Primeiro olhar</div>
+          <h3 class="tl-title">Quando tudo começou</h3>
+          <p class="tl-text">Tem aquele instante em que você olha pra alguém e algo dentro de você diz: essa pessoa vai importar. E importou.</p>
+        </div>
+      </div>
+      <div class="timeline-item tl-right reveal">
+        <div class="tl-img-wrap">
+          <img src="https://picsum.photos/seed/love2/500/380" alt="Aventuras"/>
+          <div class="tl-img-overlay"></div>
+          <div class="tl-img-label">02</div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">As aventuras</div>
+          <h3 class="tl-title">Cada lugar ficou diferente</h3>
+          <p class="tl-text">Lugar nenhum é especial por si só. É quem você leva que transforma qualquer canto no melhor lugar do mundo.</p>
+        </div>
+      </div>
+      <div class="timeline-item tl-left reveal">
+        <div class="tl-img-wrap">
+          <img src="https://picsum.photos/seed/love3/500/380" alt="Cotidiano"/>
+          <div class="tl-img-overlay"></div>
+          <div class="tl-img-label">03</div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">O cotidiano</div>
+          <h3 class="tl-title">Amor é domingo de manhã</h3>
+          <p class="tl-text">Não são só as grandes datas. É o café feito sem perguntar, o silêncio confortável, a mão que encontra a sua no escuro.</p>
+        </div>
+      </div>
+      <div class="timeline-item tl-right reveal">
+        <div class="tl-img-wrap">
+          <img src="https://picsum.photos/seed/love4/500/380" alt="Hoje"/>
+          <div class="tl-img-overlay"></div>
+          <div class="tl-img-label">04</div>
+        </div>
+        <div class="tl-content">
+          <div class="tl-date">Hoje e sempre</div>
+          <h3 class="tl-title">E ainda estamos aqui</h3>
+          <p class="tl-text">Depois de tudo — de cada discussão, cada abraço, cada recomeço — ainda somos nós dois. E isso é tudo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESENTES — EDITORIAL GRID -->
+  <section class="presentes" id="presentes">
+    <div class="presentes__inner">
+      <div class="section-label">// Faça esse dia inesquecível</div>
+      <h2 class="section-title presentes__title">Gestos que<br/><em>dizem tudo</em></h2>
+      <div class="gifts-grid">
+        <div class="gift-card gift-card--tall reveal">
+          <div class="gift-card__img-wrap">
+            <img src="https://picsum.photos/seed/gift1/500/700" alt="Flores"/>
+            <div class="gift-card__img-overlay"></div>
+          </div>
+          <div class="gift-card__body">
+            <div class="gift-card__cat">Flores & Bouquets</div>
+            <h3 class="gift-card__title">Rosa Eterna</h3>
+            <p class="gift-card__price">a partir de R$ 189</p>
+            <a href="#" class="gift-card__link">Descobrir →</a>
+          </div>
+        </div>
+        <div class="gift-col">
+          <div class="gift-card gift-card--wide reveal">
+            <div class="gift-card__img-wrap">
+              <img src="https://picsum.photos/seed/gift2/600/350" alt="Jóias"/>
+              <div class="gift-card__img-overlay"></div>
+            </div>
+            <div class="gift-card__body">
+              <div class="gift-card__cat">Joalheria</div>
+              <h3 class="gift-card__title">Colar do Amor</h3>
+              <p class="gift-card__price">a partir de R$ 349</p>
+              <a href="#" class="gift-card__link">Descobrir →</a>
+            </div>
+          </div>
+          <div class="gift-card gift-card--wide reveal">
+            <div class="gift-card__img-wrap">
+              <img src="https://picsum.photos/seed/gift3/600/350" alt="Jantar"/>
+              <div class="gift-card__img-overlay"></div>
+            </div>
+            <div class="gift-card__body">
+              <div class="gift-card__cat">Experiências</div>
+              <h3 class="gift-card__title">Jantar Exclusivo</h3>
+              <p class="gift-card__price">a partir de R$ 590</p>
+              <a href="#" class="gift-card__link">Descobrir →</a>
+            </div>
+          </div>
+        </div>
+        <div class="gift-card gift-card--tall reveal">
+          <div class="gift-card__img-wrap">
+            <img src="https://picsum.photos/seed/gift4/500/700" alt="Perfume"/>
+            <div class="gift-card__img-overlay"></div>
+          </div>
+          <div class="gift-card__body">
+            <div class="gift-card__cat">Perfumaria</div>
+            <h3 class="gift-card__title">Essência Íntima</h3>
+            <p class="gift-card__price">a partir de R$ 279</p>
+            <a href="#" class="gift-card__link">Descobrir →</a>
+          </div>
+        </div>
+      </div>
+      <div class="presentes__cta-row reveal">
+        <a href="#" class="btn-primary">Ver catálogo completo →</a>
+        <p class="presentes__note">Entrega expressa para o dia 12 · Embalagem especial inclusa</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA INTERATIVA -->
+  <section class="carta-section" id="carta">
+    <div class="carta-section__inner">
+      <div class="section-label">// Escreva o que sente</div>
+      <h2 class="section-title">Sua carta<br/><em>de amor</em></h2>
+      <div class="carta-wrap">
+        <div class="carta" id="carta">
+          <div class="carta__header">
+            <div class="carta__seal">♡</div>
+            <div class="carta__date" id="cartaDate"></div>
+          </div>
+          <div class="carta__body">
+            <div class="carta__opening">
+              Para <input type="text" class="carta-input carta-input--name" id="paraInput" placeholder="nome de quem você ama" maxlength="30"/>
+            </div>
+            <textarea
+              class="carta-textarea"
+              id="cartaText"
+              placeholder="Escreva aqui o que você nunca conseguiu dizer em voz alta...
+
+Todo amor começa com uma frase que ficou presa na garganta."
+              rows="6"
+            ></textarea>
+            <div class="carta__closing">
+              Com todo o meu amor,<br/>
+              <input type="text" class="carta-input carta-input--name" id="deInput" placeholder="seu nome" maxlength="30"/>
+            </div>
+          </div>
+          <div class="carta__actions">
+            <button class="btn-carta" onclick="copyCarta()">📋 Copiar carta</button>
+            <button class="btn-carta btn-carta--primary" onclick="downloadCarta()">💌 Salvar como imagem</button>
+          </div>
+        </div>
+        <div class="carta-tips">
+          <h4>Não sabe por onde começar?</h4>
+          <div class="tips-list">
+            <button class="tip-btn" onclick="injectTip(0)">✨ Primeira vez que vi você...</button>
+            <button class="tip-btn" onclick="injectTip(1)">🌙 Todo dia quando acordo...</button>
+            <button class="tip-btn" onclick="injectTip(2)">💫 O que mais amo em você...</button>
+            <button class="tip-btn" onclick="injectTip(3)">🌹 Prometo que sempre...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOOD SECTION — PARALLAX QUOTE -->
+  <section class="mood-section">
+    <div class="mood-section__inner">
+      <div class="mood-quote">
+        <span class="mood-quote__mark">"</span>
+        <p>Você é o tipo de coisa boa<br/>que acontece de vez em quando<br/>e que a gente não esquece.</p>
+        <cite>— para você</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__logo">AMORE</div>
+        <div class="footer__tagline">Feito para quem acredita no amor de verdade.</div>
+      </div>
+      <div class="footer__heart-row">
+        <div class="footer-hearts" id="footerHearts"></div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 AMORE · Com amor, para sempre.</p>
+        <div class="footer__links">
+          <a href="#">Sobre</a>
+          <a href="#">Entregas</a>
+          <a href="#">Contato</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
