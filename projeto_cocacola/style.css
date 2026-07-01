@@ -1,49 +1,56 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.linha{
+body {
+    background-color: #eaeaea;
+}
+
+
+.linha {
     background-color: #FF1827;
     padding: 12px 120px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-.links-linha{
+.links-linha {
     display: flex;
     gap: 20px;
 }
 
-.links-linha a{
+.links-linha a {
     text-decoration: none;
     font-size: 14px;
     color: white;
 }
 
-.header{
+
+.header {
     padding: 20px 120px;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
 }
 
-.links-header{
+.links-header {
     display: flex;
     gap: 40px;
 }
 
-.links-header a{
+.links-header a {
     color: black;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
 }
 
-.hero{
+
+.hero {
     width: 100%;
     background-image: url(./assets/background-hero.png);
     height: 30vw;
@@ -51,32 +58,32 @@
     background-position: center;
 }
 
-h1{
+
+h1 {
     font-size: 34px;
     font-weight: 700;
     text-align: center;
-
 }
 
-p{
+p {
     font-size: 16px;
     text-align: center;
     width: 980px;
     margin: 0 auto;
-
 }
 
-.first{
+.first {
     margin-top: 80px;
     margin-bottom: 40px;
 }
 
-.second{
+.second {
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
- .cards{
+
+.cards {
     max-width: 720px;
     display: flex;
     margin: 0 auto;
@@ -84,10 +91,7 @@ p{
     justify-content: center;
 }
 
-body{
-    background-color: #eaeaea;
-}
-.card{
+.card {
     width: 150px;
     height: 150px;
     background-color: white;
@@ -98,31 +102,34 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.781);
 }
 
-.banner{
+
+.banner {
     width: 980px;
     height: 400px;
     background-image: url(./assets/background-container.png);
     background-size: cover;
-    margin:  60px auto;
+    margin: 60px auto;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.banner h2{
+.banner h2 {
     color: white;
     font-size: 34px;
     width: 354px;
 }
-.banner p{
+
+.banner p {
     font-size: 16px;
     width: 304px;
     text-align: left;
     margin: initial;
     color: white;
 }
-.banner a{
+
+.banner a {
     background-color: white;
     width: 260px;
     text-align: center;
@@ -133,27 +140,41 @@ body{
     text-decoration: none;
 }
 
-.footer{
+
+.footer {
     padding: 40px 120px;
     background-color: black;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.socials {
+    display: flex;
+    gap: 16px;
 }
-.socials a{
-    width: 32px ;
+
+.socials a {
+    width: 32px;
     height: 32px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.insta{
+
+
+.insta {
     background-image: url(./assets/faInstagram.png);
 }
 
-.linkedin{
+.linkedin {
     background-image: url(./assets/faLinkedin.png);
 }
 
-.facebook{
+.facebook {
     background-image: url(./assets/faFacebookSquare.png);
 }
-.youtube{
+
+.youtube {
     background-image: url(./assets/faYoutube.png);
 }
