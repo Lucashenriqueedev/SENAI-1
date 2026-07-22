@@ -1,4 +1,4 @@
-let nome = "Luiz";
+let nome = "Lucas";
 let nota = 6.5;
 
 if (nota >= 7) {
